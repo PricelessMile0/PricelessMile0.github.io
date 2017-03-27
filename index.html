@@ -10,10 +10,27 @@
 				color: #FFF;
 			}
 		</style>
+		<script>
+			function startTime() {
+			    var today = new Date();
+			    var h = today.getHours();
+			    var m = today.getMinutes();
+			    var s = today.getSeconds();
+			    m = checkTime(m);
+			    s = checkTime(s);
+			    document.getElementById('txt').innerHTML =
+			    h + ":" + m + ":" + s;
+			    var t = setTimeout(startTime, 500);
+			}
+			function checkTime(i) {
+			    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+			    return i;
+			}
+		</script>
 	</head>
   
 	<body>
-		<p>
+		<h1>
 			I do 4 subjects for A-Level: 
 			<ul>
 				<li>Computer Science</li>
@@ -21,7 +38,7 @@
 				<li>Further Maths</li>
 				<li>Physics</li>
 			</ul>
-		</p>
+		</h1>
 		<p>
 			I am currently only doing one piece of coursework, which is for Computer Science, but I am also doing an EPQ.
 			<br>For computer science, I am currently creating a simple game. My game is a 2D platform with multiple levels, 
