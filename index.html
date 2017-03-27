@@ -19,7 +19,7 @@
 			    var seconds = today.getSeconds();
 			    minutes = checkTime(m);
 			    seconds = checkTime(s);
-			    document.getElementById('txt').innerHTML =
+			    document.getElementById('time').innerHTML =
 			    hours+":"+ minutes+":"+seconds;
 			    var t = setTimeout(startTime, 500);
 			}
@@ -31,7 +31,7 @@
 	</head>
   
 	<body onload="realtime()">
-		<div id="txt"></div>
+		<div id="time"></div>
 		<h1>
 			I do 4 subjects for A-Level: 
 		</h1>
