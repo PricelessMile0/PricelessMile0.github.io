@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>
+			Subjects
+		</title>
+		<link href="../css/my_style.css" type="text/css" rel="stylesheet"></link> 
+	</head>
+  
+	<body>
+		<p>
+			I do 4 subjects for A-Level: 
+			<ul>
+				<li>Computer Science</li>
+				<li>Maths</li>
+				<li>Further Maths</li>
+				<li>Physics</li>
+			</ul>
+		</p>
+		<p>
+			I am currently only doing one piece of coursework, which is for Computer Science, but I am also doing an EPQ.
+			<br>For computer science, I am currently creating a simple game. My game is a 2D platform with multiple levels, 
+			where the player must navigate the level through treacherous enemies and hard logic puzzles, as well as completing
+			a side quest to earn extra points.
+			<br>For my EPQ, I am researching which characteristics of warfare greatly contributed to the best infantry of the gunpowder era.
+			My interest in this subject comes from playing games throughout my childhood, such as Battle Realms, Sid Meier's Civilization and Europa Universalis IV. 
+		</p>
+	</body>
+</html>
