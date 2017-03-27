@@ -11,15 +11,15 @@
 			}
 		</style>
 		<script>
-			function startTime() {
+			function realtime() {
 			    var today = new Date();
-			    var h = today.getHours();
-			    var m = today.getMinutes();
-			    var s = today.getSeconds();
-			    m = checkTime(m);
-			    s = checkTime(s);
+			    var hours = today.getHours();
+			    var minutes = today.getMinutes();
+			    var seconds = today.getSeconds();
+			    minutes = checkTime(m);
+			    seconds = checkTime(s);
 			    document.getElementById('txt').innerHTML =
-			    h + ":" + m + ":" + s;
+			    hours+":"+ minutes+":"+seconds;
 			    var t = setTimeout(startTime, 500);
 			}
 			function checkTime(i) {
@@ -29,7 +29,7 @@
 		</script>
 	</head>
   
-	<body>
+	<body onload="realtime()">
 		<h1>
 			I do 4 subjects for A-Level: 
 			<ul>
