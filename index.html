@@ -12,15 +12,15 @@
 			}
 		</style>
 		<script>
-			function realtime() {
+			function startTime() {
 			    var today = new Date();
-			    var hours = today.getHours();
-			    var minutes = today.getMinutes();
-			    var seconds = today.getSeconds();
-			    minutes = checkTime(m);
-			    seconds = checkTime(s);
-			    document.getElementById('time').innerHTML =
-			    hours+":"+ minutes+":"+seconds;
+			    var h = today.getHours();
+			    var m = today.getMinutes();
+			    var s = today.getSeconds();
+			    m = checkTime(m);
+			    s = checkTime(s);
+			    document.getElementById('txt').innerHTML =
+			    h + ":" + m + ":" + s;
 			    var t = setTimeout(startTime, 500);
 			}
 			function checkTime(i) {
@@ -30,7 +30,8 @@
 		</script>
 	</head>
   
-	<body onload="realtime()">
+	<body onload="startTime()">
+		<div id="txt"></div>
 		<h1>
 			I do 4 subjects for A-Level: 
 		</h1>
@@ -44,7 +45,6 @@
 		</p>
 		<h2>Don't get too caught up in reading, the time is currently:
 		</h2>
-		<div id="time"></div>
 		<p>
 			I am currently only doing one piece of coursework, which is for Computer Science, but I am also doing an EPQ.
 			<br>For computer science, I am currently creating a simple game. My game is a 2D platform with multiple levels, 
